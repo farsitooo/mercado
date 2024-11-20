@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .search-container {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.navbar .search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+.navbar .cart-icon {
+  font-size: 1.8em;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 50px 20px;
+}
+
+.welcome-banner .title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.welcome-banner .sub-title {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.welcome-banner .shop-now {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #003366;
+  font-weight: bold;
+}
+
+.welcome-banner .shop-now:hover {
+  background-color: #e6b800;
+}
+
+/* Promo Banner */
+.promo-banner {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #ffeb99;
+  color: #003366;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Slidebar de Productos */
+.product-slidebar {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: thin;
+}
+
+.product-slidebar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.product-slidebar::-webkit-scrollbar-thumb {
+  background-color: #4a90e2;
+  border-radius: 5px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  text-align: center;
+  padding: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #4a90e2;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  background-color: #ffcc00;
+  color: #003366;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  background-color: #e6b800;
+}
+
+/* Beneficios */
+.benefits {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffcc00, #ffeb99);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.benefits ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 51, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefits li:hover {
+  transform: translateY(-8px);
+}
+
+.benefits .icon {
+  font-size: 2em;
+  color: #4a90e2;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.contact-section li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.contact-section p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ffcc00;
+}
